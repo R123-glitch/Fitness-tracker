@@ -1,0 +1,131 @@
+/* App.css */
+body,
+.App,
+input,
+select,
+button,
+table,
+td,
+th {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.App {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  transition: color 0.3s;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+input,
+select {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+  outline: none;
+}
+
+button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #155ab6;
+}
+
+/* Leaderboard table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+th {
+  background-color: #1a73e8;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+td {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+tr:nth-child(even) td {
+  background-color: #f1f5fb;
+}
+
+/* 🌙 Dark mode styles */
+body.dark .App {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark input,
+body.dark select {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+body.dark button {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+body.dark th {
+  background-color: #444;
+}
+
+body.dark td {
+  background-color: #2e2e2e;
+  color: #f0f0f0;
+}
+
+body.dark tr:nth-child(even) td {
+  background-color: #252525;
+}
+
